@@ -13,6 +13,7 @@ import {MatTabsModule} from "@angular/material/tabs";
     BrowserModule,
     AppRoutingModule,
     MatTabsModule
+
   ],
   providers: [
     provideClientHydration(),
