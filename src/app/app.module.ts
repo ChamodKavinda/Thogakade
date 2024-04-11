@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatTabsModule} from "@angular/material/tabs";
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {MatTabsModule} from "@angular/material/tabs";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatTabsModule
+    MatTabsModule,
+    ToastrModule.forRoot()
 
   ],
   providers: [
