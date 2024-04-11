@@ -1,0 +1,57 @@
+.main-wrap{
+  background-color: #1A2238;
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+.inner-wrap{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.left{
+  padding-left: 10px;
+}
+.right{
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+
+  ul{
+    list-style: none;
+    display: flex;
+
+    li{
+      padding: 0 5px;
+      display: flex;
+      align-items: center;
+      span{
+        color: white;
+        mat-icon{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+
+    }
+    li:hover{
+      span{
+        color: #FF6A30;
+        cursor: pointer;
+      }
+    }
+    li:last-child{
+      padding-right: 0;
+    }
+  }
+}
+.logo{
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  padding-top: 10px;
+}
+button{
+  background-color:#EAD6CD ;
+}

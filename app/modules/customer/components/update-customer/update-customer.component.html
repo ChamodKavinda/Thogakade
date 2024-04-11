@@ -1,0 +1,36 @@
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+<div class="main">
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <mat-form-field class ="full-width"  appearance="outline">
+            <mat-label>Customer Id</mat-label>
+            <input formControlName="id" type="text" matInput>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <mat-form-field class ="full-width"  appearance="outline">
+            <mat-label>Customer Name</mat-label>
+            <input formControlName="name" type="text" matInput>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <mat-form-field class ="full-width"  appearance="outline">
+            <mat-label>Customer Address</mat-label>
+            <input formControlName="address" type="text" matInput>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <mat-form-field class ="full-width"  appearance="outline">
+            <mat-label>Customer Salary</mat-label>
+            <input formControlName="salary" type="number" matInput>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-12">
+          <button [disabled]="form.invalid" type="submit" mat-raised-button color="primary">Update Customer</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
